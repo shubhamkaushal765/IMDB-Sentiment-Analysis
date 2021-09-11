@@ -12,3 +12,8 @@ The second is using the Embedding layer and LSTM. Keras provides for both layers
 
 For the second technique, another thing that must be taken care of is that reviews are of different lengths. Before feeding them to a model, they must be cast to the same size. For this, zero padding is used. In this technique, a maximum length is defined. Reviews with a length greater than this are truncated, and those with a smaller length get zero-padded.
 
+### Models
+<ul>
+  <li> MLP (Dense model): used on the matrix representation of the dataset. Achieved 89.89% percent accuracy when trained for 10 epochs using RMSprop optimizer.
+  <li> LSTM (Recurrent Neural Networks): used with the Embedding layer. This takes less memory but increases training time. Achieved 87.99% percent accuracy when trained for 5 epochs using RMSprop optimizer.
+<\ul>
