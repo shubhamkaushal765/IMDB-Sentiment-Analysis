@@ -16,4 +16,13 @@ For the second technique, another thing that must be taken care of is that revie
 <ul>
   <li> MLP (Dense model): used on the matrix representation of the dataset. Achieved 89.89% percent accuracy when trained for 10 epochs using RMSprop optimizer.
   <li> LSTM (Recurrent Neural Networks): used with the Embedding layer. This takes less memory but increases training time. Achieved 87.99% percent accuracy when trained for 5 epochs using RMSprop optimizer.
-<\ul>
+</ul>
+
+### Getting more Accuracy
+<ul>
+  <li> Training for more epochs with regularization to avoid overfitting.
+  <li> More training data: Taking more unique words as input to the embedder will give better results, although it will increase the training time.
+  <li> Data Augmentation: A collection of negative and positive sentences can be created. Appending different sentences into one review will create an instance for the training            data. This technique has potential but can also skew the data or bias the output badly.
+  <li> Training a more complex model: A more deep and complex model can be built to improve the performance further.
+  <li> Other Optimizers: There are other optimizers that can be explored, like Nadam, Adamax, Ftrl, etc. Custom models can also be built according to the requirements.
+</ul>
